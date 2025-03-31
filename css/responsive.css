@@ -1,0 +1,333 @@
+/* Estilos adicionales para mejorar la responsividad */
+
+/* Estilos para el slider de servicios en la página principal */
+.services-slider {
+    position: relative;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider-prev, .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.slider-prev:hover, .slider-next:hover {
+    background-color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.slider-prev {
+    left: 10px;
+}
+
+.slider-next {
+    right: 10px;
+}
+
+/* Estilos para la cuadrícula de servicios en páginas internas */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.services-grid .service-card {
+    transform: none;
+    opacity: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-grid .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para la página de contacto */
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-info {
+    padding: 30px;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-info-item i {
+    font-size: 1.2rem;
+    color: #4a90e2;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.contact-info-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.contact-info-content p {
+    color: #666;
+}
+
+.contact-map {
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Estilos para la página Sobre Nosotros */
+.about-section {
+    padding: 80px 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.about-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-text p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.team-section {
+    padding: 40px 0;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-member-info {
+    padding: 20px;
+}
+
+.team-member-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.team-member-info h4 {
+    font-size: 1rem;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.team-member-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.team-contact {
+    display: flex;
+    gap: 10px;
+}
+
+.team-contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #f5f7fa;
+    border-radius: 50%;
+    color: #4a90e2;
+    transition: all 0.3s ease;
+}
+
+.team-contact a:hover {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+/* Media queries adicionales para mejorar la responsividad */
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+    
+    .services-slider {
+        padding: 20px 0;
+    }
+    
+    .slider-prev, .slider-next {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 40px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .slider-container .service-card {
+        flex: 0 0 calc(100% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 90px 0 30px;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+    
+    .services, .institutions, .about-section, .contact-section {
+        padding: 50px 0;
+    }
+    
+    .service-card img {
+        height: 180px;
+    }
+    
+    .service-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .service-content p {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos para dispositivos muy pequeños */
+@media (max-width: 375px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.4rem;
+    }
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .service-card img {
+        height: 160px;
+    }
+}
