@@ -70,11 +70,14 @@ header {
 .logo {
     display: flex;
     align-items: center;
+   
 }
 
 .logo img {
-    height: 95px;
-    margin-right: 1px;
+    height: 145px;
+    margin-right: -10px;
+    margin-top: -40px;
+    transform: translate(-10px);
 }
 
 .logo h1 {
