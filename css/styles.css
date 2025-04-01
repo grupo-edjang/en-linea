@@ -42,9 +42,9 @@ header {
     width: 100%;
     z-index: 1000;
     height: 100px;
-    background: linear-gradient(90deg, green,rgb(255, 0, 179),red,blue);
-    animation: moveColors 10s linear infinite;
-    background-size: 400% 400%;
+    background: linear-gradient(to right, #68e4a0, #50e3ab, #e0d280, #e4a5e4);
+    animation: gradientAnimation 10s ease infinite;
+    background-size: 300% 300%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
@@ -73,7 +73,7 @@ header {
 }
 
 .logo img {
-    height: 120px
+    height: 90px;
     margin-right: 1px;
 }
 
@@ -166,7 +166,7 @@ header {
 /* Header con efecto de transición de colores */
 .header-gradient {
     height: 5px;
-    background: linear-gradient(to right, #4a90e2, #50e3c2, #67f0dd, #87f3f7);
+    background: linear-gradient(to right, 90deg, green,rgb(255, 0, 179),red,blue);
     animation: gradientAnimation 10s ease infinite;
     background-size: 300% 300%;
 }
